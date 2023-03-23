@@ -1,0 +1,68 @@
+@import 'screen-sizes';
+
+.login-container {
+  height: calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .title-login {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .login-form {
+    width: 70%;
+    .button {
+      font-family: 'Quicksand', sans-serif !important;
+      font-size: .8rem !important;
+      padding: 1.2rem 0;
+    }
+  }
+  .buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .7rem;
+    width: 70%;
+    .button {
+      width: 100%;
+      img {
+        max-width: 20px;
+      }
+      &:last-of-type {
+        background-color: #4267B2;
+      }
+    }
+  }
+
+  span {
+    text-align: right;
+    width: 70%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .login-form {
+      width: 50%;
+    }
+    .buttons-container {
+      width: 50%;
+    }
+    span {
+      text-align: right;
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 1140px) {
+    .login-form {
+      width: 25%;
+    }
+    .buttons-container {
+      width: 25%;
+    }
+    span {
+      text-align: right;
+      width: 25%;
+    }
+  }
+}

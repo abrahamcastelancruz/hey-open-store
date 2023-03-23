@@ -1,0 +1,79 @@
+.overlay {
+  position: fixed;
+  left: 0% !important;
+  top: 0% !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  z-index: 99;
+}
+
+.hey-open-sidebar-container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: .5s ease-in !important;
+  background-color: transparent;
+  .hey-open-sidebar-menu {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0%;
+    transition: .5s ease-in !important;
+    width: 75vw;
+    height: 100%;
+    overflow: auto !important;
+    padding: 2rem;
+    z-index: 30 !important;
+    .close-sidebar {
+      text-align: right;
+    }
+    .logo {
+      text-align: center;
+      margin-top: 1rem;
+      img {
+        width: 170px;
+      }
+    }
+    .options {
+      margin-top: .5rem;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .sidebar-menu {
+      .menu-item {
+        padding: .5rem 0;
+        a {
+          text-decoration: none;
+          color: #000000;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .hey-open-sidebar-menu {
+      width: 45vw;
+      .options {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1140px) {
+    .hey-open-sidebar-menu {
+      width: 25vw;
+      .options {
+        display: none;
+      }
+    }
+  }
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer !important;
+}

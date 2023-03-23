@@ -1,0 +1,16 @@
+.product-card {
+  width: 250px;
+  .product-data {
+    display: flex;
+    justify-content: space-between;
+    .product-details {
+      .product-name {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .product-price {
+        font-weight: 200;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<div class="navbar-container">
+  <div class="hamburger-menu">
+    <span
+      class="material-symbols-outlined"
+      (click)="showSidebar = !showSidebar"
+    >
+      menu
+    </span>
+  </div>
+  <div class="logo" [routerLink]="['/home']">
+    <img src="assets/images/logo.png" alt="Logo Hey Open">
+  </div>
+  <div class="navbar-options">
+    <div class="search-bar">
+
+    </div>
+    <div class="options">
+      <span class="material-symbols-outlined cart">
+        shopping_bag
+      </span>
+      <span
+        class="material-symbols-outlined user"
+        (click)="navigateToLogin()"
+      >
+        person
+      </span>
+      <span class="material-symbols-outlined saved">
+        bookmark
+      </span>
+    </div>
+  </div>
+</div>
+<sidebar-menu
+  *ngIf="showSidebar"
+  (hideSidebarEmit)="showSidebar = $event"
+>
+</sidebar-menu>

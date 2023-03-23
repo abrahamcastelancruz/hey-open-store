@@ -24,6 +24,14 @@
       "dom"
     ]
   },
+  "paths": {
+    "@shared/*": [ "src/app/shared/*"],
+    "@models/*": [ "src/app/shared/models/*"],
+    "@modules/*": [ "src/app/shared/modules/*"],
+    "@services/*": [ "src/app/shared/services/*"],
+    "@styles/*": [ "src/app/shared/styles/*"],
+    "@pages/*": [ "src/app/pages/*"],
+  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
