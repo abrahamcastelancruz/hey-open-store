@@ -1,6 +1,35 @@
 <div class="columns">
   <div class="column">
-    <h1 class="">Productos Destacados</h1>
-    <app-product-card></app-product-card>
+    <h1 class="section-title">Productos Destacados</h1>
+    <div class="featured-products">
+      <div class="navigation-wrapper">
+        <div class="keen-slider" #sliderPromoRef>
+          <div class="keen-slider__slide">
+           <app-product-card></app-product-card>
+          </div>
+          <div class="keen-slider__slide">
+            <app-product-card></app-product-card>
+           </div>
+           <div class="keen-slider__slide">
+            <app-product-card></app-product-card>
+           </div>
+           <div class="keen-slider__slide">
+            <app-product-card></app-product-card>
+           </div>
+           <div class="keen-slider__slide">
+            <app-product-card></app-product-card>
+           </div>
+        </div>
+        <!-- <span [ngClass]="'arrow arrow__left ' + (currentSlide === 0 ? 'arrow__disabled' : '')"
+          class="material-symbols-outlined" (click)="slider.prev(); handleArrowClick('left')">
+          arrow_back
+        </span>
+        <span *ngIf="slider"
+          [ngClass]="'arrow arrow__right ' + (slider?.track?.details?.slides?.length - 1 === currentSlide ? 'arrow__disabled' : '')"
+          class="material-symbols-outlined" (click)="slider.next(); handleArrowClick('right')">
+          arrow_forward
+        </span> -->
+      </div>
+    </div>
   </div>
 </div>

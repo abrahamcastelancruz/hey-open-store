@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import '~animate.css/animate.min.css';
+
 
 body {
   //font-family: 'Montserrat', sans-serif;
   font-family: 'Poppins', sans-serif !important;
   //font-family: 'Quicksand', sans-serif;
 }
+
+/* body .slick-prev,
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  background: red !important;
+}
+ */

@@ -1,4 +1,4 @@
-<div class="overlay"></div>
+<div class="overlay" (click)="hideSidebarMenu()"></div>
 <div class="hey-open-sidebar-container">
   <div class="hey-open-sidebar-menu">
     <div class="close-sidebar">
@@ -13,7 +13,7 @@
       <img src="assets/images/logo.png" alt="">
     </div>
     <div class="options">
-        <span class="material-symbols-outlined user">
+        <span class="material-symbols-outlined user" routerLink="/login" (click)="hideSidebarMenu()">
           person
         </span>
         <span class="material-symbols-outlined saved">
