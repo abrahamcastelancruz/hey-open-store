@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'hey-open-navbar',
@@ -12,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
   public isLoggedIn: boolean = false;
 
-  constructor(private readonly router:Router, private readonly auth: AuthService) { }
+  constructor(private readonly router:Router) { }
 
   ngOnInit(): void {
     if (window.localStorage.getItem('user')) {

@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
 
 
 @Component({
@@ -12,7 +11,7 @@ export class SidebarMenuComponent implements OnInit {
 
   public isLoggedIn: boolean = false;
 
-  constructor(public readonly auth: AuthService) { }
+  constructor() { }
 
   ngOnInit(): void {
     if (window.localStorage.getItem('user')) {

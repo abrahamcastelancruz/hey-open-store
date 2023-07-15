@@ -37,7 +37,7 @@
         <a routerLink="/about-us" (click)="hideSidebarMenu()">Acerca de Nosotros</a>
       </div>
       <div class="menu-item">
-        <a routerLink="/about-us" (click)="hideSidebarMenu(); auth.SignOut()" *ngIf="isLoggedIn">Cerrar Sesión</a>
+        <a routerLink="/about-us" (click)="hideSidebarMenu()" *ngIf="isLoggedIn">Cerrar Sesión</a>
       </div>
       <!-- <div class="menu-item">
         <a routerLink="/contact" (click)="hideSidebarMenu()">Contacto</a>
