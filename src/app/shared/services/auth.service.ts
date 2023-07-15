@@ -1,13 +1,10 @@
 import { Injectable, NgZone } from '@angular/core';
-import { User } from '../models/users.interface';
-import * as auth from 'firebase/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -93,11 +90,11 @@ get isLoggedIn(): boolean {
   return user !== null && user.emailVerified !== false ? true : false;
 }
 // Sign in with Google
-GoogleAuth() {
+/* GoogleAuth() {
   return this.AuthLogin(new auth.GoogleAuthProvider()).then((res: any) => {
     this.router.navigate(['dashboard']);
   });
-}
+} */
 // Auth logic to run auth providers
 AuthLogin(provider: any) {
   return this.afAuth
