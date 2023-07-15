@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AuthService } from 'src/app/shared/services/auth.service';
 
 
 @Component({
@@ -13,7 +12,6 @@ export class RegisterComponent implements OnInit {
   public registerForm: FormGroup;
 
   constructor(
-    public authService: AuthService,
     private fb: FormBuilder
   ) { }
 
@@ -34,7 +32,6 @@ export class RegisterComponent implements OnInit {
 
   public doRegister(): void {
     if (this.registerForm.valid) {
-      this.authService.SignUp(this.registerForm.value)
     }
   }
 }
