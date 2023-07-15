@@ -21,6 +21,21 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () =>
       import('./pages/register/register.module').then((m) => m.RegisterModule),
+  },
+  {
+    path: 'about-us',
+    loadChildren: () =>
+      import('./pages/about-us/about-us.module').then((m) => m.AboutUsModule),
+  },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./pages/contact/contact.module').then((m) => m.ContactModule),
+  },
+  {
+    path: 'store',
+    loadChildren: () =>
+      import('./pages/store/store.module').then((m) => m.StoreModule),
   }
 ];
 

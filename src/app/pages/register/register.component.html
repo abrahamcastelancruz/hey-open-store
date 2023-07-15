@@ -1,16 +1,16 @@
 <div class="login-container">
   <h1 class="title-login">¡Crea tu Cuenta Hoy Mismo!</h1>
-  <form class="login-form">
+  <form class="login-form" [formGroup]="registerForm">
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field">
           <div class="control">
-            <input class="input" type="text" placeholder="Nombre">
+            <input class="input" type="text" placeholder="Nombre" formControlName="nombre">
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input class="input" type="text" placeholder="Apellido Paterno">
+            <input class="input" type="text" placeholder="Apellido Paterno" formControlName="apellidoPaterno">
           </div>
         </div>
       </div>
@@ -19,32 +19,32 @@
       <div class="field-body">
         <div class="field">
           <div class="control">
-            <input class="input" type="text" placeholder="Apellido Materno">
+            <input class="input" type="text" placeholder="Apellido Materno" formControlName="apellidoMaterno">
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input class="input" type="tel" placeholder="Número Telefónico">
+            <input class="input" type="tel" placeholder="Número Telefónico" formControlName="numero">
           </div>
         </div>
       </div>
     </div>
     <div class="field">
       <div class="control">
-        <input class="input" type="text" placeholder="Correo Electrónico">
+        <input class="input" type="text" placeholder="Correo Electrónico" formControlName="email">
       </div>
     </div>
     <div class="field">
       <div class="control">
-        <input class="input" type="password" placeholder="Contraseña">
+        <input class="input" type="password" placeholder="Contraseña" formControlName="password">
       </div>
     </div>
-    <div class="field">
+    <!-- <div class="field">
       <div class="control">
         <input class="input" type="password" placeholder="Confirmar Contraseña">
       </div>
-    </div>
-    <button class="button mt-4 is-black is-fullwidth">Crear Cuenta</button>
+    </div> -->
+    <button class="button mt-4 is-black is-fullwidth" (click)="doRegister()">Crear Cuenta</button>
   </form>
   <span class="mt-4">¿Ya tienes una cuenta? <a routerLink="/login">Inicia Sesión</a></span>
 </div>

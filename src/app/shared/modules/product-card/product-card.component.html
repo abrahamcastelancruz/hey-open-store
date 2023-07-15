@@ -1,12 +1,13 @@
 <div class="product-card">
-  <img src="assets/images/product-images/product-test.jpg" alt="" class="product-image">
+  <img [src]="productData.image" alt="" class="product-image">
   <div class="product-data">
     <div class="product-details">
-      <h3 class="product-name">Playera hey! open</h3>
-      <p class="product-price">$550</p>
+      <h3 class="product-name">{{productData.name}}</h3>
+      <p class="product-price">{{productData.price}}</p>
     </div>
-    <span class="material-symbols-outlined">
+    <!-- <span class="material-symbols-outlined">
       bookmark
-    </span>
+    </span> -->
   </div>
+  <a [href]="productData.link" target="_blank" class="button is-primary">Comprar</a>
 </div>

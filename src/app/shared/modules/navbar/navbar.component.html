@@ -15,18 +15,19 @@
 
     </div>
     <div class="options">
-      <span class="material-symbols-outlined cart">
+      <span class="material-symbols-outlined cart" routerLink="/store">
         shopping_bag
       </span>
       <span
         class="material-symbols-outlined user"
+        *ngIf="!isLoggedIn"
         (click)="navigateToLogin()"
       >
         person
       </span>
-      <span class="material-symbols-outlined saved">
+      <!-- <span class="material-symbols-outlined saved">
         bookmark
-      </span>
+      </span> -->
     </div>
   </div>
 </div>

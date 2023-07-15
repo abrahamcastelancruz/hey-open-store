@@ -13,6 +13,39 @@ export class ForYouComponent implements AfterViewInit {
   public currentSlide: number = 0;
   public dotHelper: Array<Number> = [];
 
+  public products = [
+    {
+      image: "assets/images/hey-open-face-red.jpg",
+      price: "$800.00 MXN",
+      name: "Hey! Open Face Red",
+      link: "https://buy.stripe.com/aEUdS0ctN4aJ7Qc144"
+    },
+    {
+      image: "assets/images/hey-open-tie-break.jpg",
+      price: "$800.00 MXN",
+      name: "Hey! Open Tie Break",
+      link: "https://buy.stripe.com/8wMdS09hB6iR1rO9AB"
+    },
+    {
+      image: "assets/images/hey-open-match-point.jpg",
+      price: "$800.00 MXN",
+      name: "Hey! Open Match Point",
+      link: "https://buy.stripe.com/4gwdS02Td0Yx1rO3ce"
+    },
+    {
+      image: "assets/images/hey-open-smash.jpg",
+      price: "$800.00 MXN",
+      name: "Hey! Open SMASH",
+      link: "https://buy.stripe.com/fZecNW2TddLj0nK4gj"
+    },
+    {
+      image: "assets/images/hey-open-black.jpg",
+      price: "$800.00 MXN",
+      name: "Hey! Open Black",
+      link: "https://buy.stripe.com/dR6g0851l7mV4E06os"
+    }
+  ]
+
 
   constructor(
   ) { }
