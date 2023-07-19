@@ -15,31 +15,31 @@ export class ForYouComponent implements AfterViewInit {
 
   public products = [
     {
-      image: "assets/images/hey-open-face-red.jpg",
+      image: "assets/images/hey-open-face-red.avif",
       price: "$800.00 MXN",
       name: "Hey! Open Face Red",
       link: "https://buy.stripe.com/aEUdS0ctN4aJ7Qc144"
     },
     {
-      image: "assets/images/hey-open-tie-break.jpg",
+      image: "assets/images/hey-open-tie-break.avif",
       price: "$800.00 MXN",
       name: "Hey! Open Tie Break",
       link: "https://buy.stripe.com/8wMdS09hB6iR1rO9AB"
     },
     {
-      image: "assets/images/hey-open-match-point.jpg",
+      image: "assets/images/hey-open-match-point.avif",
       price: "$800.00 MXN",
       name: "Hey! Open Match Point",
       link: "https://buy.stripe.com/4gwdS02Td0Yx1rO3ce"
     },
     {
-      image: "assets/images/hey-open-smash.jpg",
+      image: "assets/images/hey-open-smash.avif",
       price: "$800.00 MXN",
       name: "Hey! Open SMASH",
       link: "https://buy.stripe.com/fZecNW2TddLj0nK4gj"
     },
     {
-      image: "assets/images/hey-open-black.jpg",
+      image: "assets/images/hey-open-black.avif",
       price: "$800.00 MXN",
       name: "Hey! Open Black",
       link: "https://buy.stripe.com/dR6g0851l7mV4E06os"
