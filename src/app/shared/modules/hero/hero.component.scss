@@ -1,5 +1,4 @@
 .hero {
-  background-image: url('../../../../assets/images/hero-principal.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,6 +23,8 @@
     align-items: center;
 
     .container {
+      align-items: center;
+      text-align: center;
       .animated {
         animation-duration: 1s;
         animation-fill-mode: both;
@@ -96,4 +97,11 @@
   to {
     opacity: 1;
   }
+}
+
+
+video {
+  height: 90vh !important;
+  width: 100vw;
+  object-fit: cover !important;
 }
