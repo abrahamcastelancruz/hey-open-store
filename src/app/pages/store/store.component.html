@@ -2,10 +2,12 @@
   <div class="container">
     <div class="columns is-multiline is-mobile is-tablet is-desktop">
       <div
-        class="column is-half-mobile is-one-third-tablet is-one-fifth-widescreen"
+        class="column is-half-mobile is-one-third-tablet is-one-fifth-widescreen  animate__animated animate__fadeIn"
         *ngFor="let product of products">
         <app-product-card [productData]="product"></app-product-card>
       </div>
     </div>
   </div>
 </section>
+<app-footer></app-footer>
+

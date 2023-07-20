@@ -13,14 +13,14 @@
       <img src="assets/images/logo.png" alt="">
     </div>
     <div class="options">
-        <!-- <span
+        <span
           class="material-symbols-outlined user"
           routerLink="/login"
           (click)="hideSidebarMenu()"
           *ngIf="!isLoggedIn"
         >
           person
-        </span> -->
+        </span>
         <!-- <span class="material-symbols-outlined saved">
           bookmark
         </span> -->
@@ -37,11 +37,11 @@
         <a routerLink="/about-us" (click)="hideSidebarMenu()">Acerca de Nosotros</a>
       </div>
       <div class="menu-item">
+        <a routerLink="/contact" (click)="hideSidebarMenu()">Contacto</a>
+      </div>
+      <div class="menu-item">
         <a routerLink="/about-us" (click)="hideSidebarMenu()" *ngIf="isLoggedIn">Cerrar Sesión</a>
       </div>
-      <!-- <div class="menu-item">
-        <a routerLink="/contact" (click)="hideSidebarMenu()">Contacto</a>
-      </div> -->
     </div>
   </div>
 </div>

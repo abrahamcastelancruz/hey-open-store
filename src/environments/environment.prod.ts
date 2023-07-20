@@ -1,12 +1,6 @@
+export const SERVER_URL =  'https://hey-open-backend.herokuapp.com/api/v1'
 export const environment = {
   production: true,
-  firebase : {
-    apiKey: "AIzaSyBWtVHWJY9Z13fZdcgvR23ESXM_3BYv688",
-    authDomain: "hey--open-a8506.firebaseapp.com",
-    projectId: "hey--open-a8506",
-    storageBucket: "hey--open-a8506.appspot.com",
-    messagingSenderId: "813794046020",
-    appId: "1:813794046020:web:18c59180f095da5dff4c11",
-    measurementId: "G-KG4FRQ4GL3"
-  }
+  REGISTER_URL: `${SERVER_URL}/users/register`,
+  LOGIN_URL: `${SERVER_URL}/users/login`,
 }

@@ -65,8 +65,8 @@ export class ForYouComponent implements AfterViewInit {
           },
         },
         slides: {
-          perView: 2,
-          spacing: 5,
+          perView: 1.3,
+          spacing: 30,
           origin: 'auto',
         },
         initial: this.currentSlide,
