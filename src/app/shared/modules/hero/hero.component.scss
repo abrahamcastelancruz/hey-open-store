@@ -28,14 +28,14 @@
       }
 
       h1 {
-        font-weight: 200 !important;
+        font-weight: 400 !important;
         text-align: left;
         color: #ffffff;
       }
 
       h2 {
         color: #ffffff;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
       .button {
@@ -101,4 +101,8 @@ video {
   height: 90vh !important;
   width: 100vw;
   object-fit: cover !important;
+}
+img {
+  width: 150px;
+  height: 150px;
 }
